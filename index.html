@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Calling UI</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.1.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./FAVICON.jpg" type="image/x-icon">
+</head>
+<body>
+<main class="container mx-auto rounded-full lg:flex justify-center py-10">
+<!-- vertical nav part start -->
+<section class="lg:flex gap-4">
+    <section class="lg:flex-none flex">
+    <section class="lg:h-[700px] lg:w-[80px] h-[800px] w-[70px] text-center bg-base-200 rounded-md shadow-2xl">    
+        <div class="mt-6">
+                <ul class="menu rounded-box">
+                    <li>
+                        <a class="tooltip tooltip-right" data-tip="GROUP">
+                        <i class="fa-solid fa-user-group" style="color: #176DEE;"></i>
+                    </a>
+                    </li>
+                </ul>
+        </div>
+        <div class="mt-36">
+            <ul class="menu rounded-box">
+                <li>
+                    <a class="tooltip tooltip-right" data-tip="HOME">
+                    <i class="fa-solid fa-house"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="tooltip tooltip-right border-3 border-r-blue-700" data-tip="VIDEO CALL">
+                    <i class="fa-solid fa-video" style="color: #176DEE;"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="tooltip tooltip-right" data-tip="AUDIO CALL">
+                    <i class="fa-solid fa-microphone"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="tooltip tooltip-right" data-tip="NOTIFICATION">
+                    <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="avatar online mt-[250px]">
+            <div class="w-12 rounded-full">
+              <img src="./FAVICON.jpg" />
+            </div>
+        </div>
+</section>
+<!-- vertical nav part end -->
+<!-- group call part start -->
+<section class="lg:h-[700px] h-[800px] bg-base-200 rounded-md shadow-2xl p-4">
+    <div>
+        <div>
+            <p class="text-xl font-bold">Product Design Weekly Meeting</p>
+        </div>
+        <div class="flex justify-between mt-2 mb-2">
+            <div class="flex gap-4">
+                <p class="text-gray-600">21, June 2023</p>
+                <P><i class="fa-solid fa-record-vinyl" style="color: #f00000;"></i> <span       class="text-gray-600">Recording</span></P>
+            </div>
+            <div>
+                <p class="text-blue-800 font-bold">Share meeting link</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <img class="lg:h-[360px] h-[200px] lg:w-[740px] w-[200px] lg:ml-0 ml-[100px]" src="./P-1.png" alt="">
+    </div>
+    <div class="grid lg:grid-cols-4 grid grid-cols-2 gap-2 mt-4">
+        <img class="w-[180px] h-[180px] rounded-md" src="./P-2.png" alt="">
+        <img class="w-[180px] h-[180px] rounded-md"  src="./P-3.png" alt="">
+        <img class="w-[180px] h-[180px] rounded-md"  src="./P-4.png" alt="">
+        <img class="w-[180px] h-[180px] rounded-md"  src="./FAVICON.jpg" alt="">
+    </div>
+    <div class="flex justify-center gap-6 lg:mt-2 mt-6 items-center">
+        <p class="bg-red-600 rounded-box py-2 px-2"><i class="fa-solid fa-video-slash text-lg" style="color: #ffffff;"></i></p>
+        <p class="bg-white rounded-full py-2 px-2"><i class="fa-solid fa-microphone" style="color: #000000;"></i></p>
+        <p class="bg-red-600 rounded-full px-4 py-2"><span class="text-white text-lg font-bold">Leave Meeting</span></p>
+        <p class="bg-white rounded-full py-2 px-2"><i class="fa-solid fa-tv" style="color: #000000;"></i></p>
+        <p class="bg-white rounded-full py-2 px-2"><i class="fa-regular fa-closed-captioning" style="color: #000000;"></i></p>
+    </div>
+</section>
+</section>
+<!-- group call part end -->
+<!-- message part start -->
+<section class="lg:h-[700px] lg:w-[300px] w-[80%] bg-base-200 rounded-md shadow-2xl p-4 lg:mt-0 mt-4">
+<p class="text-center font-bold text-xl">Messages</p>
+<p class="text-center text-xs text-gray-600">You can chat here with other members during the meeting and it will be deleted after meeting.</p>
+<div>
+    <div class="chat chat-start mt-4 mt-4">
+        <div class="chat-image avatar">
+          <div class="w-10 rounded-full">
+            <img src="./P-1.png">
+          </div>
+        </div>
+        <div class="chat-header">
+          Jhon
+          <time class="text-xs opacity-50">10:01</time>
+        </div>
+        <div class="chat-bubble">What's up guys?</div>
+    </div>
+    <div class="chat chat-start mt-4">
+        <div class="chat-image avatar">
+          <div class="w-10 rounded-full">
+            <img src="./P-2.png">
+          </div>
+        </div>
+        <div class="chat-header">
+          Hasan
+          <time class="text-xs opacity-50">10:02</time>
+        </div>
+        <div class="chat-bubble">HEY! How are you?</div>
+    </div>
+    <div class="chat chat-start mt-4">
+        <div class="chat-image avatar">
+          <div class="w-10 rounded-full">
+            <img src="./P-3.png">
+          </div>
+        </div>
+        <div class="chat-header">
+          Jessica
+          <time class="text-xs opacity-50">10:03</time>
+        </div>
+    <div class="chat-bubble">What about new project.</div>
+    </div>
+    <div class="chat chat-start mt-4">
+        <div class="chat-image avatar">
+          <div class="w-10 rounded-full">
+            <img src="./P-4.png">
+          </div>
+        </div>
+        <div class="chat-header">
+          Amir
+          <time class="text-xs opacity-50">10:04</time>
+        </div>
+        <div class="chat-bubble">This is our 3rd assignment.</div>
+    </div>
+    <div class="chat chat-start mt-4">
+        <div class="chat-image avatar">
+          <div class="w-10 rounded-full">
+            <img src="./FAVICON.jpg">
+          </div>
+        </div>
+        <div class="chat-header">
+          Saif
+          <time class="text-xs opacity-50">10:05</time>
+        </div>
+        <div class="chat-bubble">Hi everyone.</div>
+    </div>
+    <div class="chat chat-start mt-4">
+        <div class="chat-image avatar">
+          <div class="w-10 rounded-full">
+            <img src="./P-1.png">
+          </div>
+        </div>
+        <div class="chat-header">
+          Jhon
+          <time class="text-xs opacity-50">10:01</time>
+        </div>
+        <div class="chat-bubble">What's up guys?</div>
+    </div>
+    
+</section>
+<!-- message part start -->
+</section>
+
+</main>
+</body>
+</html>
